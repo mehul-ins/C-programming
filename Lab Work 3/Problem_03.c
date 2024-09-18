@@ -15,7 +15,7 @@ int main(){
     }else{
         double x = (-b + sqrt(dis))/ 2.0*a ;
         double y =  (-b - sqrt(dis))/ 2.0*a ;
-
+        printf("The roots of given equation are: ");
         printf("%lf\n", x);
         printf("%lf", y);
     }
