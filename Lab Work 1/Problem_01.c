@@ -17,5 +17,7 @@ int main(){
     
     int result = smallest_multiple(i, j);
     printf("The number is : %d\n", result);
+    printf("published to github");
     return 0;
+
 }
