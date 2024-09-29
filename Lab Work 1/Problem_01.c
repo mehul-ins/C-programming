@@ -4,7 +4,7 @@ int smallest_multiple(int i, int j){
     if(i % j == 0){
         return i + j;
     }else{
-        return ((i + j) + 1 * j);
+        return ((i / j) + 1 * j);
     }
 }
 
