@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main(){
-    int n;
-    int count = 0;
-    printf("Enter the number n: ");
-    scanf("%d", &n);
-    while( n != 0){
-        n &= (n - 1);
-        count++;
-    }
-    
-    printf("The number of set of bits is %d ", count );
+   int n;
+   printf("Enter the number n: ");
+   scanf("%d", &n);
+   int count = 0;
+   while(n > 0){
+    int remainder = n % 2;
+    n = n / 2;
+    count += remainder;
+   }
+   printf("%d", count);
 }
