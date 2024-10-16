@@ -1,11 +1,11 @@
 #include <stdio.h>
 //Write a program to predict the smallest multiple of j but it should be larger than i.
 int smallest_multiple(int i, int j){
-    if(i % j == 0){
-        return i + j;
-    }else{
-        return ((i / j) + 1 * j);
-    }
+   int multiple = (i / j ) * j;
+   if(multiple  <= i){
+    multiple += j;
+   }
+   return multiple;
 }
 
 int main(){
