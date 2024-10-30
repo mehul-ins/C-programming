@@ -11,9 +11,11 @@ int main() {
     n = n / 2;
     count += remainder;
    }
-   if(count == 1){
+   if(count == 1)
+   {
     printf("Power of two");
-   }else{
+   }
+   else{
     printf("Not the power of two");
    }
 }
