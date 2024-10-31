@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int isSumOfDigits(int num){
-     int ans = 0;
+     int sum = 0;
     while(num > 0){
         int rem = num % 10;
         num /= 10;
-        ans += rem;
+        sum += rem;
     }
-     return ans;
+     return sum;
 }
 int main(){
     int num;
@@ -15,4 +15,5 @@ int main(){
     scanf("%d", &num);
     int result = isSumOfDigits(num);
     printf("The sum digits of the number is: %d", result);
+    return 0;
 }

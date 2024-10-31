@@ -15,4 +15,5 @@ int main(){
     scanf("%d", &b);
     int ans = gcd(a, b);
     printf("The value of GCD is: %d", ans);
+    return 0;
 }
