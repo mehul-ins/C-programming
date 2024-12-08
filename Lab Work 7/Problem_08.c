@@ -2,7 +2,7 @@
 void removeDuplicate(int arr[], int *n){
     // using pointer for call by reference use as if I will declare it as call by value then any changes will not reflect in main function that is using pointer approach in this problem.
     int temp[*n]; // temporary array of pointer size n.
-    int k = 0;
+    int k = 0; // k will iterate the loop.
 
     for(int i = 0; i < *n; i++){
         int duplicate = 0;
@@ -16,6 +16,7 @@ void removeDuplicate(int arr[], int *n){
                temp[k++] = arr[i];
         }
     }
+    // copying elements back to original array
     for (int i = 0; i < k; i++) {
         arr[i] = temp[i];
     }
