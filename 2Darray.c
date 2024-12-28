@@ -15,5 +15,6 @@ int main(){
         for(int j = 0; j < c; j++){
             printf("%d\t", array[i][j]);
         }
+        printf("\n");
     }
 }
